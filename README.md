@@ -11,4 +11,4 @@ Flutter tutorial on converting a modern UI for a courses dashboard.
 
 # Youtube Tutorial
 
-<!-- [![Flutter courses dashboard ](http://img.youtube.com/vi/Oj11JaFUeUM/0.jpg)](http://www.youtube.com/watch?v=Oj11JaFUeUM "Flutter courses dashboard") -->
+[![Flutter Student Dashboard](http://img.youtube.com/vi/PvAxLqvw7pE/0.jpg)](http://www.youtube.com/watch?v=PvAxLqvw7pE "Flutter Student Dashboard")
