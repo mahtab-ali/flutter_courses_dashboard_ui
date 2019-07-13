@@ -11,10 +11,6 @@ class _CourseDetailsState extends State<CourseDetails> {
     'Adobe XD',
     'Sketch Basics',
     'Figma Mastery',
-    'Figma Mastery',
-    'Figma Mastery',
-    'Figma Mastery',
-    'Figma Mastery',
   ];
 
   List topics = [
@@ -22,11 +18,6 @@ class _CourseDetailsState extends State<CourseDetails> {
     'Detailed tutorials on adobe XD',
     'Introduction to the course',
     'Sketch beginner to expert series',
-    'Figma from basic to advanced',
-    'Figma from basic to advanced',
-    'Figma from basic to advanced',
-    'Figma from basic to advanced',
-    'Figma from basic to advanced',
     'Figma from basic to advanced',
   ];
 
