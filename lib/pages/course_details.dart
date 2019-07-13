@@ -10,7 +10,11 @@ class _CourseDetailsState extends State<CourseDetails> {
     'Introduction',
     'Adobe XD',
     'Sketch Basics',
-    'Figma Mastery'
+    'Figma Mastery',
+    'Figma Mastery',
+    'Figma Mastery',
+    'Figma Mastery',
+    'Figma Mastery',
   ];
 
   List topics = [
@@ -18,6 +22,11 @@ class _CourseDetailsState extends State<CourseDetails> {
     'Detailed tutorials on adobe XD',
     'Introduction to the course',
     'Sketch beginner to expert series',
+    'Figma from basic to advanced',
+    'Figma from basic to advanced',
+    'Figma from basic to advanced',
+    'Figma from basic to advanced',
+    'Figma from basic to advanced',
     'Figma from basic to advanced',
   ];
 
@@ -31,45 +40,45 @@ class _CourseDetailsState extends State<CourseDetails> {
         iconTheme: IconThemeData(color: Colors.black),
         elevation: 0,
       ),
-      body: SingleChildScrollView(
-        child: Container(
-          padding: EdgeInsets.all(15),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Text(
-                'Design Tool Bundle'.toUpperCase(),
+      body: Padding(
+        padding: const EdgeInsets.all(15.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Text(
+              'Design Tool Bundle'.toUpperCase(),
+              style: TextStyle(
+                fontSize: 22,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            ListTile(
+              contentPadding: EdgeInsets.all(0),
+              leading: CircleAvatar(
+                backgroundImage: NetworkImage('https://i.pravatar.cc/100'),
+                backgroundColor: Colors.grey[300],
+              ),
+              title: Text(
+                'Frederick Hemmings',
                 style: TextStyle(
-                  fontSize: 22,
+                  color: Colors.black,
+                  fontSize: 14,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              ListTile(
-                contentPadding: EdgeInsets.all(0),
-                leading: CircleAvatar(
-                  backgroundImage: NetworkImage('https://i.pravatar.cc/100'),
-                  backgroundColor: Colors.grey[300],
-                ),
-                title: Text(
-                  'Frederick Hemmings',
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 14,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                subtitle: Text(
-                  'Lead Instructor',
-                  style: TextStyle(
-                    color: Theme.of(context).primaryColor,
-                    fontSize: 12,
-                  ),
+              subtitle: Text(
+                'Lead Instructor',
+                style: TextStyle(
+                  color: Theme.of(context).primaryColor,
+                  fontSize: 12,
                 ),
               ),
-              Padding(
-                padding: EdgeInsets.only(top: 15),
-              ),
-              ListView.builder(
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 15),
+            ),
+            Expanded(
+              child: ListView.builder(
                 itemCount: chapters.length,
                 shrinkWrap: true,
                 itemBuilder: (BuildContext context, int index) {
@@ -122,8 +131,8 @@ class _CourseDetailsState extends State<CourseDetails> {
                   );
                 },
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

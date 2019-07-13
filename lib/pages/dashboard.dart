@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
-
 import 'course_details.dart';
 
 class Dashboard extends StatefulWidget {
@@ -12,6 +11,7 @@ class _DashboardState extends State<Dashboard> {
   List courses = [
     'Design Tool Bundles',
     'Web Development Bundle',
+    'Web Design Bundle',
   ];
 
   @override
@@ -46,23 +46,23 @@ class _DashboardState extends State<Dashboard> {
           ),
         ],
       ),
-      body: SingleChildScrollView(
-        child: Container(
-          padding: EdgeInsets.all(15),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Text(
-                'My Courses'.toUpperCase(),
-                style: TextStyle(
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                ),
+      body: Padding(
+        padding: const EdgeInsets.all(15.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Text(
+              'My Courses'.toUpperCase(),
+              style: TextStyle(
+                fontSize: 22,
+                fontWeight: FontWeight.bold,
               ),
-              Padding(
-                padding: EdgeInsets.only(top: 15),
-              ),
-              ListView.builder(
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 15),
+            ),
+            Expanded(
+              child: ListView.builder(
                 itemCount: courses.length,
                 shrinkWrap: true,
                 itemBuilder: (BuildContext context, int index) {
@@ -168,8 +168,8 @@ class _DashboardState extends State<Dashboard> {
                   );
                 },
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
